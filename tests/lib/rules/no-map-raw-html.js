@@ -21,7 +21,7 @@ const parserOptions = {
 
 const errors = [{
   message: 'React components returned from map functions should not be raw html elements. Extract raw html into a new component and return that component from the map.',
-  type: "CallExpression"
+  type: "JSXElement"
 }];
 const options = ['div,span,tr'];
 ruleTester.run("no-map-raw-html", rule, {
