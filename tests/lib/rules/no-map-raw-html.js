@@ -28,6 +28,7 @@ ruleTester.run("no-map-raw-html", rule, {
   valid: [
     {code: "_.map([], () => <SomeComponent />)", options, parserOptions},
     {code: "_.map([], () => <div />)", options: ['tr,span'], parserOptions},
+    {code: "_.map([])", options: ['tr,span'], parserOptions},
     {code: "[].map(() => <SomeComponent />)", options, parserOptions},
     {code: "map([], () => <SomeComponent />)", options, parserOptions},
     {code: "_.map([], () => {const thing=10; return <SomeComponent />})", options, parserOptions},

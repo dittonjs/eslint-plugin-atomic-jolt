@@ -44,3 +44,4 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 `no-splat-props // disallow {...this.props} to child react components`
+`no-map-raw-html // disallow the returning of raw html elements from map functions`
