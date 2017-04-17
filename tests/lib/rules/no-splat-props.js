@@ -4,15 +4,15 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/no-splat-props"),
+const rule = require("../../../lib/rules/no-splat-props"),
     RuleTester = require("eslint").RuleTester;
 
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
 
-var ruleTester = new RuleTester();
-var parserOptions = {
+const ruleTester = new RuleTester();
+const parserOptions = {
   ecmaVersion: 6,
   ecmaFeatures: {
     jsx: true
