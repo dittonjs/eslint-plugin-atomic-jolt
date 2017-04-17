@@ -27,6 +27,7 @@ const options = ['div,span,tr'];
 ruleTester.run("no-map-raw-html", rule, {
   valid: [
     {code: "_.map([], () => <SomeComponent />)", options, parserOptions},
+    {code: "_.map()", options, parserOptions},
     {code: "_.map([], () => <div />)", options: ['tr,span'], parserOptions},
     {code: "_.map([])", options: ['tr,span'], parserOptions},
     {code: "[].map(() => <SomeComponent />)", options, parserOptions},
