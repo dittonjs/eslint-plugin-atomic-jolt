@@ -32,13 +32,14 @@ ruleTester.run("no-splat-props", rule, {
         message: 'Do not splat the props to child components, instead pass each prop individualy or create an object that has only the values that the child needs from probs and splat that object.',
         type: "JSXOpeningElement"
       }]
-    }, {
-      code: "<div {...props}>Hello world</div>",
-      parserOptions: parserOptions,
-      errors: [{
-        message: 'Do not splat the props to child components, instead pass each prop individualy or create an object that has only the values that the child needs from probs and splat that object.',
-        type: "JSXOpeningElement"
-      }]
     }
+    // {
+    //   code: "<div {...props}>Hello world</div>",
+    //   parserOptions: parserOptions,
+    //   errors: [{
+    //     message: 'Do not splat the props to child components, instead pass each prop individualy or create an object that has only the values that the child needs from probs and splat that object.',
+    //     type: "JSXOpeningElement"
+    //   }]
+    // }
   ]
 });
